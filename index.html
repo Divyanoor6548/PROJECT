@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT-1</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="background.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+            <ul>
+                <li><a href="https://www.nda.nic.in/site-page-viewer/13">About</a></li>
+                <li><a href="https://www.nda.nic.in/site-page-viewer/4">Service Training</a></li>
+                <li><a href="https://www.nda.nic.in/site-page-viewer/10">Academics</a></li>
+                <li><a href="https://www.nda.nic.in/site-page-viewer/25">Outdoor Training</a></li>
+                <li><a href="https://www.nda.nic.in/life-as-a-cadet">Cadet's Corner</a></li>
+                <li><a href="https://www.nda.nic.in/site-page-viewer/12">Administration</a></li>
+                <li><a href="https://www.nda.nic.in/men-at-helm">Hall Of Fame</a></li>
+            </ul>
+        </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2 class="logo">NATIONAL DEFENCE ACADEMY</h2>
+            <div class="text-sci">
+                <p>The National Defence Academy is an iconic institution and hallmark of global excellence in the sphere of military education.
+                During the last seven decades of its glorious existence, the National Defence Academy has grown both in grace and grandeur and from its 
+                portals have emerged ‘Leaders of Men’.The ‘Cradle’ has indeed rocked the nascent youth and groomed them into ‘Leaders’ who have lived 
+                up to its ethos: ‘सेवा परमो धर्म:’ (Service Before Self).</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/indian-army/?originalSubdomain=in"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://t.me/s/joinindianarmybyrakeshsir"><i class='bx bxl-telegram' ></i></a>
+                    <a href="https://www.instagram.com/indianarmy.adgpi/?hl=en"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com/adgpi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2>Sign In</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" placeholder="Enter Your Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" id="open-popup-modal" class="btn">Sign In</button>
+                    <div class="login-register">
+                        <p>Don't have a account?<a href="#" class="register-link">Sign up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup">
+        <header><h1 class="logo"><a href="https://minervaacademy.com/" target="_"><i class='bx bx-anchor'></i>MINERVA DEFENCE ACADEMY<i class='bx bx-anchor'></i></h1></a>
+        </header>
+		<h3>PREPRATION OF WRITTEN EXAMINATION FOR ANY DEFENCE EXAM</h3>
+		<h3>NEW BATCH STARTING SOON</h3>
+		<img src="https://minervaacademy.com/wp-content/uploads/2021/09/army_man.png" class="img-fluid" alt="">
+		<a href="#" class="btn">Enroll Now</a>
+        <p>&ensp;</p>
+		<u>FOR MORE INFORMATION:</u>
+		<p>&nbsp;</p>
+        <button type="button" class="modal-close">&times;</button>
+        <footer>Contact Us At: 9877004473 Or Mail Us At: minervadefenceacademy@gmail.com</footer>
+    </div>
+<script>
+    var modal = document.getElementById('popup');
+var btn = document.getElementById("open-popup-modal");
+var span = document.getElementsByClassName("modal-close")[0];
+btn.onclick = function() {
+modal.style.display = "block";
+}
+span.onclick = function() {
+modal.style.display = "none";
+}
+window.onload = function() {
+setTimeout(function() {
+modal.style.display = 'block';
+}, 3000);
+}
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>  
+</body>
+</html>
